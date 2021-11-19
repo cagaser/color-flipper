@@ -16,7 +16,7 @@ body {
 .center-text {
     background-color: black;
     color: white;
-    font-family: monospace;
+    font-family: 'Lobster';
     height: 80px;
     padding: 1em;
     border-radius: 9px 50px;
@@ -41,6 +41,6 @@ body {
 
 @media screen and (max-width: 700px) {
     .center-text {
-        font-size: 70%;
+        font-size: 80%;
     }
 }
