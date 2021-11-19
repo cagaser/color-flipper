@@ -6,19 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
     <link rel="stylesheet" href="style.css">
+    <script src="random-color.js"></script>
 
-    <script>
-        function getRandInt(max) {
-            return Math.floor(Math.random() * max)
-        }
-        function randomBGcolor(){
-            var red = getRandInt(256)
-            var green = getRandInt(256)
-            var blue =getRandInt(256)
-            var rgb = `rgb(${red},${green},${blue})`
-            document.body.style.backgroundColor = rgb
-        }
-    </script>
 </head>
 <body>
     <h1>Generate Random Background Color</h1>
