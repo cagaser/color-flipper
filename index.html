@@ -17,6 +17,8 @@
         .center-text {
             background-color: black;
             color: white;
+            font-family: monospace;
+            height: 80px;
             padding: 1em;
             border-radius: 9px 50px;
             cursor:default;
@@ -28,16 +30,27 @@
         }
 
         .center-text:hover {
-            font-size: larger;
             box-shadow: 10px 10px 5px darkslategrey;
 
+        }
+
+        @media screen and (min-width: 701px) {
+            .center-text {
+                font-size: 100%;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .center-text {
+                font-size: 70%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="center-text" onclick="randomBGcolor()">
-            <h1>Generate Random RGB</h1>
+            <h1 >Generate Random RGB</h1>
         </div>
     </div>
 
