@@ -7,10 +7,44 @@
     <title>Color Flipper</title>
     <link rel="stylesheet" href="style.css">
     <script src="random-color.js"></script>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-auto-rows: 200px;
+            grid-template-areas:
+                ". a a ."
+                ". a a .";
+        }
+        .center-text {
+            background-color: black;
+            color: white;
+            grid-area: a;
+            justify-self: center;
+            align-self: center;
+            padding: 1em;
+            border-radius: 90px;
+            cursor:default
 
+        }
+
+        .center-text:hover {
+            font-size: larger;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Generate Random Background Color</h1>
-    <button onclick="randomBGcolor()"> Change color</button>
+    <div class="wrapper">
+        <div class="center-text" onclick="randomBGcolor()">
+            <h1>Generate Random RGB</h1>
+        </div>
+        <!-- <div class="center-button">
+            <button class="btn1" onclick="randomBGcolor()"> Change color</button>
+        </div> -->
+    </div>
+
+    
 </body>
 </html>
